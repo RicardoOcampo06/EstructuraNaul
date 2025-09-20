@@ -1,0 +1,18 @@
+public class App {
+    
+    public static int potencia(int a, int b){
+        if(b == 0){
+            return 1;
+        }
+        return a * potencia(a, b - 1);
+    }
+
+
+    public static void main(String[] args) throws Exception {
+        int a = 5;
+        int b = 2;
+
+        int res = potencia(a, b);
+        System.out.println("El resultado es el siguiente "+ a + " ^ " + b + " es:" + res);
+    }
+}
